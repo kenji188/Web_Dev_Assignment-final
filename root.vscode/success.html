@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bookshop</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header>
+    <div class="Nav-container">
+      <div class="logo">
+        <span aria-hidden="true" class="logo-icon">📖</span> My Bookshop
+      </div>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link" href="index.html">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <button class="icon-button" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+        <img src="img/icons8-moon-30.png" alt="Toggle dark mode" />
+      </button>
+    </div>
+  </header>
+  <main class="success-page">
+    <div class="success-card">
+      <div class="succeess-icon">
+        <img src="img/icons8-tick-ezgif.com-gif-maker (1).gif" alt="Success Icon" />
+      </div>
+    <h1>Payment Successful!</h1>
+    <p class="details"><strong id="success-title">Your book</strong> will be on its way shortly!</p>
+    <p class="details">Your credit card number ends in **** **** **** <strong id="card-ending"></strong></p>
+
+    <a href="index.html" class="home-link">Back to Home</a>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

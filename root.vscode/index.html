@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bookshop</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <a href="main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="Nav-container">
+      <div class="logo">
+        <span aria-hidden="true" class="logo-icon">📖</span> My Bookshop
+      </div>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link" href="index.html">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <button class="icon-button" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+        <img src="img/icons8-moon-30.png" alt="Toggle dark mode" />
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="page-header">
+      <span class="eyebrow">OUR COLLECTION</span>
+      <h1>Featured Books</h1>
+      <div class="search-container">
+        <span class="search-icon" aria-hidden="true">
+          <img src="img/icons8-search-16.png" alt="Search icon" />
+        </span>
+        <input type="text" placeholder="Search by title or author..." aria-label="Search books by title or author" />
+      </div>
+    </div>
+
+    <section class="book-grid">
+      <article class="book-card">
+        <div class="book-img">
+          <img src="img/project-hail-mary.jpg" Alt=" Project Hail Mary book cover" />
+        </div>
+
+        <div class="book-info">
+          <p class="author">Andy Weir</p>
+          <h2 class="title">Project Hail Mary</h2>
+          <p class="description">Ryland Grace is the sole survivor on a desperate, last-chance mission—and if he fails,
+            humanity and the earth itself will perish.
+
+            Except that right now, he doesn’t know that. He can’t even remember his own name, let alone the nature of
+            his assignment or how to complete it.
+
+            All he knows is that he’s been asleep for a very, very long time. And he’s just been awakened to find
+            himself millions of miles from home, with nothing but two corpses for company.
+
+            His crewmates dead, his memories fuzzily returning, Ryland realizes that an impossible task now confronts
+            him. Hurtling through space on this tiny ship, it’s up to him to puzzle out an impossible scientific
+            mystery—and conquer an extinction-level threat to our species.
+
+            And with the clock ticking down and the nearest human being light-years away, he’s got to do it all alone.
+
+            Or does he?
+          </p>
+          <div class="card-btm">
+            <span class="price">£14.99</span>
+            <a class="buy-btn" data-buy aria-label="Pay for this book" href="pay.html"
+              onclick="handleBuyNow(event, this)">
+              <span aria-hidden="true" class="cart-icon">🛒 Buy Now</span>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="book-card">
+        <div class="book-img">
+          <img src="img/The Martian.jpg" Alt="The Martian book cover" />
+        </div>
+
+        <div class="book-info">
+          <p class="author">Andy Weir</p>
+          <h2 class="title">The Martian</h2>
+          <p class="description">Six days ago, astronaut Mark Watney became one of the first people to walk on Mars.
+
+            Now, he’s sure he’ll be the first person to die there.
+
+            After a dust storm nearly kills him and forces his crew to evacuate while thinking him dead, Mark finds
+            himself stranded and completely alone with no way to even signal Earth that he’s alive—and even if he could
+            get word out, his supplies would be gone long before a rescue could arrive.
+
+            Chances are, though, he won’t have time to starve to death. The damaged machinery, unforgiving environment,
+            or plain-old “human error” are much more likely to kill him first.
+
+            But Mark isn’t ready to give up yet. Drawing on his ingenuity, his engineering skills — and a relentless,
+            dogged refusal to quit — he steadfastly confronts one seemingly insurmountable obstacle after the next. Will
+            his resourcefulness be enough to overcome the impossible odds against him?</p>
+          <div class="card-btm">
+            <span class="price">£8.99</span>
+            <a href="pay.html" class="buy-btn" aria-label="Pay for this book" onclick="handleBuyNow(event, this)">
+              <span aria-hidden="true" class="cart-icon">🛒 Buy Now</span>
+            </a>
+          </div>
+      </article>
+      <article class="book-card">
+        <div class="book-img">
+          <img src="img/Mickey7.jpg" Alt="Mickey7 book cover" />
+        </div>
+
+        <div class="book-info">
+          <p class="author">Edward Ashton</p>
+          <h2 class="title">Mickey7</h2>
+          <p class="description">After several deaths punctuating a series of all-too-brief life spans, a clone
+            reassesses his purpose—and his humanity—in Edward Ashton's Mickey7.
+
+            EXPENDABLE \ik'spen-d'-b'l\ n. A human clone utilized for dangerous work on space exploration missions. An
+            Expendable's personality and memories may be transferred intact to a new body if and when the current host
+            dies.
+
+            Mickey Barnes is an Expendable, now on his seventh iteration, living—and dying—among his fellow colonists on
+            the near-uninhabitable ice world of Niflheim. Some consider him immortal. Others believe he's a soulless
+            monstrosity. For the past nine years, he has been deployed for hazardous assignments and subjected to
+            experiments that test the limits of human endurance, his humanity sacrificed for the greater good.
+
+            While on reconnaissance, Mickey7 is injured and left for dead, only to be saved by Niflheim's native
+            species, thought to be insentient by the colonists. Returning to base, Mickey7 meets his next generation,
+            Mickey8. Neither clone is willing to recycle himself, but if anyone discovers multiple Mickeys exist,
+            they'll both be executed—and there won't ever be a Mickey9.
+
+            But Mickey7's premature twin isn't his only secret. He hasn't uploaded his memories in a month, leaving his
+            clone in the dark about his near death and close encounter with the planet's inhabitants. Mickey7 also
+            doesn't know how all of his previous selves died, and those he remembers have left him traumatized and
+            mistrustful of the colony's mission. A mission that has Mickey Barnes questioning his moral and mortal
+            existence... again... and again....</p>
+          <div class="card-btm">
+            <span class="price">£8.03</span>
+            <a href="pay.html" class="buy-btn" aria-label="Pay for this book" onclick="handleBuyNow(event, this)">
+              <span aria-hidden="true" class="cart-icon">🛒 Buy Now</span>
+            </a>
+          </div>
+      </article>
+      </article>
+      <article class="book-card">
+        <div class="book-img">
+          <img src="img/Not_Quite_Dead_Yet.jpg" Alt="Not Quite Dead Yet book cover" />
+        </div>
+
+        <div class="book-info">
+          <p class="author">Holly Jackson</p>
+          <h2 class="title">Not Quite Dead Yet</h2>
+          <p class="description">In seven days Jet Mason will be dead.
+
+            Jet is the daughter of one of the wealthiest families in Woodstock, Vermont. Twenty-seven years old, she’s
+            still waiting for her life to begin. She’ll do it later, she always says. She has time.
+
+            Until, on the night of Halloween, Jet is violently attacked by an unseen intruder.
+
+            She suffers a catastrophic brain injury. The doctor is certain that within a week, she’ll suffer a deadly
+            aneurysm.
+
+            Jet never thought of herself as having enemies. But now she looks at everyone in a new light: her family,
+            her ex-best friend turned sister-in-law, her former boyfriend.
+
+            She only has seven days, and as her condition deteriorates she has only her childhood friend Billy for help.
+            But nevertheless, she’s absolutely determined to finally finish something:
+
+            Jet is going to solve her own murder.</p>
+          <div class="card-btm">
+            <span class="price">£12.99</span>
+            <a href="pay.html" class="buy-btn" aria-label="Pay for this book" onclick="handleBuyNow(event, this)">
+              <span aria-hidden="true" class="cart-icon">🛒 Buy Now</span>
+            </a>
+          </div>
+      </article>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

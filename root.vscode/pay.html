@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bookshop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <a href="main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="Nav-container">
+            <div class="logo">
+                <span aria-hidden="true" class="logo-icon">📖</span> My Bookshop
+            </div>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <button class="icon-button" aria-label="Toggle dark mode">
+                <img src="img/icons8-moon-30.png" alt="Toggle dark mode" />
+            </button>
+        </div>
+    </header>
+    <main id="main-content" class="payment-page">
+        <div class="checkout-wrap">
+            <div class="back-link">
+                <a href="index.html" class="nav-link">← Back to Home</a>
+            </div>
+            <div class="checkout-head">
+
+                <div class="checkout-card">
+                    <div class="summary-details">
+                        <img class="summary-img" id="summary-img" src="" alt="Book Cover" />
+                        <div class="summary-txt">
+                            <p class="author" id="checkout-author">Author Name</p>
+                            <h2 class="checkout-title" id="checkout-title">Book Title</h2>
+                            <span class="checkout-price" id="checkout-price">$0.00</span>
+                        </div>
+                    </div>
+
+                    <hr class="divider"> <!-- using a hr to seperate the sections efficiently -->
+
+                    <div class="payement-section">
+                        <h3>Payment Details</h3>
+                        <div id="error-message" class="error-message" aria-live="polite"></div>
+
+                        <form id="payment-form">
+                            <div class="form-group">
+                                <label for="cardholder-name">Cardholder Name</label>
+                                <input type="text" id="cardholder-name" name="cardholder-name" required
+                                    placeholder="Tyler Shaw" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required
+                                    placeholder="tyler.shaw@example.com" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="card-number">Card Number</label>
+                                <input type="text" id="card-number" name="card-number" required
+                                    placeholder="1234 5678 9012 3456" maxlength="19" />
+                                <!-- max length so the user cant enter anymore than 19 characters -->
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expiry-date">Expiry Date</label>
+                                    <input type="text" id="expiry-date" name="expiry-date" required placeholder="MM/YY"
+                                        maxlength="5" /> <!-- 'required'is to ensure the user fills this in-->
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" required placeholder="123" maxlength="3" />
+                                </div>
+                            </div>
+                            <div class="card-brands" aria-hidden="true">
+                                <span class="card-brand">Visa</span>
+                                <span class="Mastercard-text">Mastercard</span>
+                            </div>
+                            <hr class="divider">
+
+                            <div class="total">
+                                <span>Total:</span>
+                                <span id="total-price" class="total-price">$0.00</span>
+                            </div>
+
+                            <button type="submit" class="pay-btn">
+                                <span aria-hidden="true" class="cart-icon">Pay Now</span>
+
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
