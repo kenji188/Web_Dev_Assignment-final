@@ -35,43 +35,51 @@ body {
 }
 
 .skip-link:focus {
-    /* this triggers once the user clicks the 'tab' key */
+    /* this will triggers once the user clicks the 'tab' key */
     top: 0;
 }
 
 /* header and nav */
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--card-bg);
     border-bottom: 1px solid var(--border-color);
     padding: 1rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .Nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    flex: 1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
 }
 
 .logo {
-    font-size: 1.1rem;
-    font-weight: 700;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    flex: 1;
+    font-weight: 600;
 }
 
 .logo-icon {
+    width: px;
+    height:auto;
     background-color: var(--primary-blue);
-    color: white;
     padding: 0.3rem;
     border-radius: 6px;
-    font-size: 0.9rem;
+    margin-right: 8px;
 }
 
+.basket-img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 6px;
+    margin-bottom: 2px;
+}
 .nav-list {
     list-style: none;
     display: flex;
